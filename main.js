@@ -1,23 +1,19 @@
-//seleção dos Botões//
-const btnligar = document.querySelector('#btnligar');
-const btnpausar = document.querySelector('#btnpausar');
-const btnresetar = document.queryselector('#btnresetar');
+//Seleção dos botões
+const btnLigar = document.querySelector('#btnLigar');
+const btnPausar = document.querySelector('#btnPausar');
+const btnResetar = document.querySelector('#btnResetar');
 
-//seleção de parágrafo de exibiçao de crônometro
+//Seleção do parágrafo de exibição do cronômetro
+const cronometro = document.querySelector('#cronometro');
 
-const crônometro= document.querySelector('crônometro');
+//Variáveis de controle
+let decSeg = 0;
+let contando;   //Variável de controle de contagem
 
-//variaveis de controle
+//Variável de id
+let idContagem;
 
-let decseg = 0;
-let contando;//variaveis de controle de contagem
-
-//variavel de id
-
-let idcontagem;
-
-//funções de crônometro
-
+//Funções de cronômetro
 function mostraCronometro() {
     decSeg++;                           //incrementa cada décimo de segundo
 
